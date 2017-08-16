@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box,.content{
+            display: grid;
+        }
+        .box{
+            grid-template-rows: 1fr;
+            grid-row-gap: 10px;
+            color: #ffffff;
+        }
+        .header{
+            height: 100px;
+        }
+        .content{
+            height: 400px;
+            grid-template-columns: 120px 1fr 120px;
+            grid-column-gap: 10px;
+        }
+        .footer{
+            height: 80px;
+        }
+        .header,.content,.footer{
+            background-color: #7AB8ED;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="header">header</div>
+        <div class="content">
+            <div>nav</div>
+            <div>ariticle</div>
+            <div>aside</div>
+        </div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
