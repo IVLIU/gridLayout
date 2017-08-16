@@ -5,8 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <style>
+        body{
+            padding: 50px;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 100px 10px 100px 10px 100px;
+            grid-template-rows: auto 10px auto 10px auto 10px;
+        }
+        .box{
+            background-color: #444444;
+            color: #ffffff;
+            font-size: 150%;
+            padding: 20%;
+            text-align: center;
+        }
+        .f{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 2;
+            background-color: orangered;
+        }
+        .b{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .c{
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .d{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 1;
+            grid-column-end: 2;
+        }
+        .e{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .a{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            background-color: royalblue;
+        }
+        .g{
+            grid-row-start: 5;
+            grid-row-end: 6;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .h{
+            grid-row-start: 7;
+            grid-row-end: 8;
+            grid-column-start: 3;
+            grid-column-end: 4;
+        }
+        .i{
+            grid-row-start: 1;
+            grid-row-end: 2;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+        .j{
+            grid-row-start: 3;
+            grid-row-end: 4;
+            grid-column-start: 5;
+            grid-column-end: 6;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="wrapper">
+        <div class="box a">A</div>
+        <div class="box b">B</div>
+        <div class="box c">C</div>
+        <div class="box d">D</div>
+        <div class="box e">E</div>
+        <div class="box f">F</div>
+        <div class="box g">G</div>
+        <div class="box h">H</div>
+        <div class="box i">I</div>
+        <div class="box j">J</div>
+    </div>
 </body>
 </html>
